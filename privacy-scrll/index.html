@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy – Scrll</title>
+
+  <!-- GitHub Pages / SEO -->
+  <meta name="description" content="Scrll Privacy Policy. Scrll operates entirely offline and does not collect, store, or share personal data." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="./" />
+
+  <!-- Social (optional but nice) -->
+  <meta property="og:title" content="Privacy Policy – Scrll" />
+  <meta property="og:description" content="Scrll operates entirely offline and does not collect, store, or share personal data." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg:#0f1115;
+      --card:#161922;
+      --text:#e6e8ee;
+      --muted:#9aa1b2;
+      --accent:#6c8cff;
+      --radius:14px;
+      --max:860px;
+      --shadow: 0 10px 30px rgba(0,0,0,.25);
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      background:linear-gradient(180deg,#0f1115,#0b0d12);
+      color:var(--text);
+      line-height:1.65;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    main{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:clamp(18px,4vw,56px);
+    }
+    header{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom:26px;
+      flex-wrap:wrap;
+    }
+    .title h1{
+      margin:0 0 6px 0;
+      font-size:clamp(2rem,4vw,2.6rem);
+      letter-spacing:-.02em;
+    }
+    .updated{
+      color:var(--muted);
+      font-size:.95rem;
+    }
+
+    .lang{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      background:rgba(255,255,255,.04);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:999px;
+      padding:6px;
+      box-shadow: var(--shadow);
+    }
+    .lang button{
+      appearance:none;
+      border:0;
+      background:transparent;
+      color:var(--muted);
+      padding:8px 12px;
+      border-radius:999px;
+      font-weight:600;
+      cursor:pointer;
+    }
+    .lang button[aria-pressed="true"]{
+      background:rgba(108,140,255,.18);
+      color:var(--text);
+    }
+    .lang button:focus-visible{
+      outline:2px solid var(--accent);
+      outline-offset:2px;
+    }
+
+    section{
+      background:var(--card);
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:var(--radius);
+      padding:clamp(16px,3vw,28px);
+      margin-bottom:14px;
+      box-shadow: var(--shadow);
+    }
+    h2{
+      margin:0 0 8px 0;
+      font-size:1.15rem;
+      color:var(--accent);
+    }
+    p{margin:.55rem 0}
+    ul{padding-left:1.2rem;margin:.55rem 0}
+    li{margin:.35rem 0}
+    footer{
+      margin-top:28px;
+      text-align:center;
+      color:var(--muted);
+      font-size:.9rem;
+    }
+
+    /* Language visibility */
+    [data-lang]{display:none}
+    html[data-lang="en"] [data-lang="en"],
+    html[data-lang="de"] [data-lang="de"]{display:block}
+
+    @media (max-width:480px){
+      .lang{width:100%;justify-content:center}
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <div class="title">
+        <h1>
+          <span data-lang="en">Privacy Policy</span>
+          <span data-lang="de">Datenschutzerklärung</span>
+        </h1>
+        <div class="updated">
+          <span data-lang="en">Last updated: <strong>[DATE]</strong></span>
+          <span data-lang="de">Stand: <strong>[DATE]</strong></span>
+        </div>
+      </div>
+
+      <nav class="lang" aria-label="Language switcher">
+        <button id="btn-en" type="button" aria-pressed="true">English</button>
+        <button id="btn-de" type="button" aria-pressed="false">Deutsch</button>
+      </nav>
+    </header>
+
+    <!-- 1 -->
+    <section>
+      <h2><span data-lang="en">1. General Information</span><span data-lang="de">1. Allgemeine Informationen</span></h2>
+      <p data-lang="en">
+        Scrll is designed to respect user privacy. The app operates entirely offline and does not collect, store, or share any personal data.
+      </p>
+      <p data-lang="de">
+        Scrll wurde entwickelt, um die Privatsphäre der Nutzer zu respektieren. Die App funktioniert vollständig offline und erhebt, speichert oder teilt keine personenbezogenen Daten.
+      </p>
+    </section>
+
+    <!-- 2 -->
+    <section>
+      <h2><span data-lang="en">2. Data Collection</span><span data-lang="de">2. Datenerhebung</span></h2>
+      <p data-lang="en">Scrll does not collect or process any personal or sensitive user data.</p>
+      <p data-lang="de">Scrll erhebt oder verarbeitet keine personenbezogenen oder sensiblen Nutzerdaten.</p>
+
+      <ul data-lang="en">
+        <li>No user accounts or login</li>
+        <li>No analytics or tracking technologies</li>
+        <li>No advertising services</li>
+        <li>No backend servers</li>
+        <li>No third-party data collection</li>
+      </ul>
+
+      <ul data-lang="de">
+        <li>Keine Nutzerkonten oder Logins</li>
+        <li>Keine Analyse- oder Tracking-Technologien</li>
+        <li>Keine Werbedienste</li>
+        <li>Keine Backend-Server</li>
+        <li>Keine Datenerhebung durch Dritte</li>
+      </ul>
+
+      <p data-lang="en">All content remains exclusively on the user’s device.</p>
+      <p data-lang="de">Alle Inhalte verbleiben ausschließlich auf dem Gerät des Nutzers.</p>
+    </section>
+
+    <!-- 3 -->
+    <section>
+      <h2><span data-lang="en">3. Photos and Media Access</span><span data-lang="de">3. Zugriff auf Fotos und Medien</span></h2>
+      <p data-lang="en">
+        Scrll accesses photos and videos stored on the user’s device solely to display and organize personal memories.
+      </p>
+      <p data-lang="de">
+        Scrll greift auf Fotos und Videos auf dem Gerät des Nutzers ausschließlich zu, um persönliche Erinnerungen anzuzeigen und zu organisieren.
+      </p>
+
+      <ul data-lang="en">
+        <li>Media files are processed locally on the device</li>
+        <li>No photos or videos are uploaded, shared, or transmitted</li>
+        <li>Original files are not modified</li>
+      </ul>
+
+      <ul data-lang="de">
+        <li>Medien werden lokal auf dem Gerät verarbeitet</li>
+        <li>Keine Fotos oder Videos werden hochgeladen, geteilt oder übertragen</li>
+        <li>Originaldateien werden nicht verändert</li>
+      </ul>
+    </section>
+
+    <!-- 4 -->
+    <section>
+      <h2><span data-lang="en">4. Location Information</span><span data-lang="de">4. Standortinformationen</span></h2>
+      <p data-lang="en">
+        If photos contain embedded location metadata (EXIF data), Scrll may display the corresponding city name locally on the device.
+      </p>
+      <p data-lang="de">
+        Wenn Fotos eingebettete Standortmetadaten (EXIF-Daten) enthalten, kann Scrll den zugehörigen Städtenamen lokal auf dem Gerät anzeigen.
+      </p>
+
+      <ul data-lang="en">
+        <li>No active location tracking</li>
+        <li>No location permission requested</li>
+        <li>No storage or transmission of location data</li>
+      </ul>
+
+      <ul data-lang="de">
+        <li>Kein aktives Standort-Tracking</li>
+        <li>Keine Standortberechtigung erforderlich</li>
+        <li>Keine Speicherung oder Übertragung von Standortdaten</li>
+      </ul>
+    </section>
+
+    <!-- 5 -->
+    <section>
+      <h2><span data-lang="en">5. In-App Purchases</span><span data-lang="de">5. In-App-Käufe</span></h2>
+      <p data-lang="en">Scrll offers a one-time in-app purchase to unlock full functionality.</p>
+      <p data-lang="de">Scrll bietet einen einmaligen In-App-Kauf an, um den vollen Funktionsumfang freizuschalten.</p>
+
+      <ul data-lang="en">
+        <li>Payments are processed exclusively by the app store provider</li>
+        <li>Scrll does not receive, access, or store any payment or billing information</li>
+      </ul>
+
+      <ul data-lang="de">
+        <li>Zahlungen werden ausschließlich über den App-Store-Anbieter abgewickelt</li>
+        <li>Scrll erhält keinen Zugriff auf Zahlungs- oder Abrechnungsinformationen und speichert diese nicht</li>
+      </ul>
+    </section>
+
+    <!-- 6 -->
+    <section>
+      <h2><span data-lang="en">6. Data Sharing</span><span data-lang="de">6. Datenweitergabe</span></h2>
+      <p data-lang="en">Scrll does not share any data with third parties.</p>
+      <p data-lang="de">Scrll gibt keine Daten an Dritte weiter.</p>
+    </section>
+
+    <!-- 7 -->
+    <section>
+      <h2><span data-lang="en">7. Children’s Privacy</span><span data-lang="de">7. Datenschutz von Kindern</span></h2>
+      <p data-lang="en">
+        Scrll is not designed for children under the age of 13 and does not knowingly collect personal data from children.
+      </p>
+      <p data-lang="de">
+        Scrll ist nicht für Kinder unter 13 Jahren konzipiert und erhebt wissentlich keine personenbezogenen Daten von Kindern.
+      </p>
+    </section>
+
+    <!-- 8 -->
+    <section>
+      <h2><span data-lang="en">8. Changes to This Policy</span><span data-lang="de">8. Änderungen dieser Erklärung</span></h2>
+      <p data-lang="en">
+        This Privacy Policy may be updated if the app’s functionality changes. The latest version will always be available at the same location.
+      </p>
+      <p data-lang="de">
+        Diese Datenschutzerklärung kann aktualisiert werden, wenn sich die Funktionalität der App ändert. Die aktuelle Version ist stets unter derselben Adresse verfügbar.
+      </p>
+    </section>
+
+    <!-- 9 -->
+    <section>
+      <h2><span data-lang="en">9. Contact</span><span data-lang="de">9. Kontakt</span></h2>
+      <p data-lang="en">If you have any questions about this Privacy Policy, please contact:</p>
+      <p data-lang="de">Wenn du Fragen zu dieser Datenschutzerklärung hast, kontaktiere bitte:</p>
+
+      <p>
+        <span data-lang="en">Email:</span>
+        <span data-lang="de">E-Mail:</span>
+        <a href="mailto:[YOUR_EMAIL_ADDRESS]">[YOUR_EMAIL_ADDRESS]</a>
+      </p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Scrll
+      <span aria-hidden="true"> · </span>
+      <a href="#en" id="link-en">EN</a>
+      <span aria-hidden="true">/</span>
+      <a href="#de" id="link-de">DE</a>
+    </footer>
+  </main>
+
+  <script>
+    // --- GitHub Pages-friendly language routing (no server needed) ---
+    // Supports:
+    //  - direct links: /privacy.html#de or /#de
+    //  - remembers last choice via localStorage
+    //  - defaults to English
+
+    const STORAGE_KEY = "scrll_lang";
+    const html = document.documentElement;
+
+    function setPressed(lang) {
+      document.getElementById("btn-en").setAttribute("aria-pressed", String(lang === "en"));
+      document.getElementById("btn-de").setAttribute("aria-pressed", String(lang === "de"));
+      html.setAttribute("data-lang", lang);
+      html.setAttribute("lang", lang);
+      localStorage.setItem(STORAGE_KEY, lang);
+      // keep a shareable URL hash
+      if (location.hash !== "#" + lang) history.replaceState(null, "", "#" + lang);
+    }
+
+    function pickInitialLang() {
+      const hash = (location.hash || "").replace("#", "").toLowerCase();
+      if (hash === "de" || hash === "en") return hash;
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved === "de" || saved === "en") return saved;
+      return "en";
+    }
+
+    // Buttons
+    document.getElementById("btn-en").addEventListener("click", () => setPressed("en"));
+    document.getElementById("btn-de").addEventListener("click", () => setPressed("de"));
+
+    // Hash change (shareable links)
+    window.addEventListener("hashchange", () => {
+      const hash = (location.hash || "").replace("#", "").toLowerCase();
+      if (hash === "de" || hash === "en") setPressed(hash);
+    });
+
+    // Init
+    setPressed(pickInitialLang());
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!--
+    GitHub Pages optimization notes:
+
+    1) Custom Domain:
+       - Add a file named CNAME in the repository root containing ONLY your domain:
+         example.com   (or www.example.com)
+
+    2) If you later build a multi-page site and want SPA-style routing, create 404.html
+       that redirects to index.html while preserving the path. For this single page,
+       it's not required.
+
+    Minimal 404.html you can use (optional):
+    ------------------------------------------------------------
+    <!doctype html><meta charset="utf-8">
+    <meta http-equiv="refresh" content="0; url=./">
+    ------------------------------------------------------------
+  -->
+</body>
+</html>
