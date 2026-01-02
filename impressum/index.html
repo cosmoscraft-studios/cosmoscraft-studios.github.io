@@ -1,0 +1,191 @@
+<!-- /impressum/index.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Impressum – Cosmoscraft Studios</title>
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="./" />
+  <style>
+    :root{
+      --bg:#0b0b0b;
+      --fg:#f2f2f2;
+      --muted:#b9b9b9;
+      --line:rgba(242,242,242,.18);
+      --max:920px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--fg);
+      font-family: Helvetica, Arial, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      letter-spacing:.01em;
+    }
+    a{color:inherit;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:22px clamp(16px, 3vw, 40px) 56px;
+    }
+    .top{
+      display:flex;
+      justify-content:space-between;
+      gap:16px;
+      flex-wrap:wrap;
+      padding-bottom:16px;
+      border-bottom:1px solid var(--line);
+    }
+    .brand{
+      font-weight:700;
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.18em;
+      color:var(--muted);
+      margin-top:4px;
+    }
+    .nav{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      color:var(--muted);
+    }
+    h1{
+      margin:28px 0 10px 0;
+      font-size:clamp(30px, 4.5vw, 54px);
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:-.02em;
+      line-height:1.02;
+    }
+    .card{
+      margin-top:18px;
+      border-top:1px solid var(--line);
+      padding-top:18px;
+    }
+    h2{
+      margin:18px 0 8px;
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.18em;
+      color:var(--muted);
+    }
+    p{
+      margin:0 0 10px 0;
+      color:var(--fg);
+      font-size:14px;
+      line-height:1.65;
+      max-width:78ch;
+    }
+    .muted{color:var(--muted)}
+    .kv{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:6px;
+    }
+    .kv div{
+      border-bottom:1px solid var(--line);
+      padding:12px 0;
+    }
+    .k{
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      color:var(--muted);
+      margin:0 0 6px 0;
+    }
+    .v{
+      margin:0;
+      font-size:14px;
+      line-height:1.6;
+    }
+    footer{
+      margin-top:26px;
+      padding-top:18px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:12px;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">Cosmoscraft Studios</div>
+      <nav class="nav" aria-label="Navigation">
+        <a href="/">Home</a>
+        <a href="/#privacy">Privacy</a>
+        <a href="mailto:[YOUR_EMAIL_ADDRESS]">Kontakt</a>
+      </nav>
+    </header>
+
+    <h1>Impressum</h1>
+    <p class="muted">
+      Bitte ersetze die Platzhalter in eckigen Klammern durch deine echten Angaben.
+    </p>
+
+    <section class="card" aria-label="Impressum Angaben">
+      <h2>Angaben gemäß § 5 TMG</h2>
+      <div class="kv">
+        <div>
+          <p class="k">Name / Firma</p>
+          <p class="v">[DEIN NAME ODER FIRMA]</p>
+        </div>
+        <div>
+          <p class="k">Anschrift</p>
+          <p class="v">[STRASSE] [HAUSNR], [PLZ] [ORT], [LAND]</p>
+        </div>
+        <div>
+          <p class="k">Kontakt</p>
+          <p class="v">
+            E-Mail: <a href="mailto:[YOUR_EMAIL_ADDRESS]">[YOUR_EMAIL_ADDRESS]</a><br />
+            Telefon: [TELEFON] (optional)
+          </p>
+        </div>
+      </div>
+
+      <h2>Inhaltlich Verantwortlicher</h2>
+      <p>[NAME] – Anschrift wie oben</p>
+
+      <h2>Haftung für Inhalte</h2>
+      <p>
+        Wir bemühen uns um Aktualität und Richtigkeit der Inhalte, übernehmen jedoch keine Gewähr.
+        Verpflichtungen zur Entfernung oder Sperrung von Informationen nach den allgemeinen Gesetzen bleiben unberührt.
+      </p>
+
+      <h2>Haftung für Links</h2>
+      <p>
+        Unser Angebot enthält Links zu externen Websites Dritter. Auf deren Inhalte haben wir keinen Einfluss.
+        Daher können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
+      </p>
+
+      <h2>Urheberrecht</h2>
+      <p>
+        Die durch uns erstellten Inhalte und Werke auf diesen Seiten unterliegen dem Urheberrecht.
+        Beiträge Dritter sind als solche gekennzeichnet.
+      </p>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Cosmoscraft Studios</div>
+      <div><a href="/">Home</a></div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
