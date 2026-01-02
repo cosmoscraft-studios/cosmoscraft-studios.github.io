@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -114,6 +114,7 @@
 
     /* Language visibility */
     [data-lang]{display:none}
+    html:not([data-lang]) [data-lang="en"]{display:block}
     html[data-lang="en"] [data-lang="en"],
     html[data-lang="de"] [data-lang="de"]{display:block}
 
