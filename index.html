@@ -5,82 +5,132 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cosmoscraft Studios</title>
-  <meta name="description" content="Landing Page + Privacy Policies" />
+  <meta name="description" content="Cosmoscraft Studios baut ruhige, offline-first Apps. Eine kurze Uebersicht aller Apps mit direktem Weg zur Datenschutzerklaerung." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="./" />
   <link rel="stylesheet" href="/assets/css/base.css" />
   <style>
     /* landing-only */
     .hero{
-      padding:38px 0 26px;
+      padding:44px 0 28px;
+      display:grid;
+      gap:22px;
       border-bottom:1px solid var(--line);
+    }
+    .heroGrid{
+      display:grid;
+      gap:18px;
+      grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+      align-items:start;
+    }
+    .heroCard{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .heroActions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:6px;
+    }
+    .heroChips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
     }
     .section{
-      padding:26px 0 0;
+      padding:32px 0 0;
     }
-    .sectionTitle{
+    .sectionHead{
       display:flex;
       justify-content:space-between;
-      gap:12px;
-      align-items:baseline;
-      padding:0 0 12px;
-      border-bottom:1px solid var(--line);
-      margin-bottom:0;
+      gap:16px;
+      align-items:flex-end;
+      margin-bottom:18px;
+      flex-wrap:wrap;
     }
-    .sectionTitle h2{
-      margin:0;
-      font-size:12px;
+    .sectionHead h2{
+      margin:6px 0 0;
+      font-size:clamp(22px, 3vw, 34px);
       font-weight:700;
-      text-transform:uppercase;
-      letter-spacing:.18em;
-      color:var(--muted);
+      font-family:var(--font-display);
     }
     .count{
       font-size:12px;
       color:var(--muted);
-      letter-spacing:.12em;
+      letter-spacing:.18em;
       text-transform:uppercase;
       white-space:nowrap;
     }
-    .list{display:grid;grid-template-columns:1fr}
-    .item{
+    .appCard{
       display:flex;
-      align-items:center;
-      justify-content:space-between;
+      flex-direction:column;
       gap:14px;
-      padding:18px 0;
-      border-bottom:1px solid var(--line);
+      min-height:240px;
     }
-    .left{min-width:0}
-    .name{
-      margin:0 0 4px 0;
-      font-size:16px;
-      font-weight:700;
-      text-transform:uppercase;
-      letter-spacing:.06em;
-      line-height:1.2;
+    .appTop{
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      align-items:flex-start;
     }
-    .meta{
+    .appTitle{
       margin:0;
+      font-size:22px;
+      font-weight:700;
+      font-family:var(--font-display);
+    }
+    .appMeta{
+      margin:6px 0 0;
       color:var(--muted);
-      font-size:13px;
-      line-height:1.5;
-      max-width:70ch;
+      font-size:15px;
     }
-    .cta{
-      flex:0 0 auto;
-      font-size:12px;
-      text-transform:uppercase;
-      letter-spacing:.18em;
-      color:var(--fg);
-      border:1px solid var(--line);
-      padding:10px 12px;
-      background:transparent;
+    .featureList{
+      list-style:none;
+      padding:0;
+      margin:0;
+      display:grid;
+      gap:8px;
+      color:var(--muted);
+      font-size:14px;
     }
-    .cta:hover{border-color:rgba(242,242,242,.40);text-decoration:none}
-    @media (min-width: 760px){
-      .item{padding:22px 0}
-      .name{font-size:18px}
+    .featureList li{
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+    }
+    .featureList li::before{
+      content:"-";
+      color:var(--accent);
+      font-weight:700;
+    }
+    .cardActions{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      margin-top:auto;
+      flex-wrap:wrap;
+    }
+    .placeholder{
+      background:rgba(255,255,255,.6);
+      border-style:dashed;
+      box-shadow:none;
+    }
+    .supportCard{
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .supportRow{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      align-items:center;
+    }
+    @media (max-width:720px){
+      .hero{padding-top:32px}
     }
   </style>
 </head>
@@ -89,47 +139,112 @@
     <header class="top">
       <div class="brand">Cosmoscraft Studios</div>
       <nav class="nav" aria-label="Navigation">
-        <a href="/impressum/">Legal</a>
-        <a href="mailto:support@cosmoscraftstudios.com">Contact</a>
+        <a href="/#apps">Apps</a>
+        <a href="/support/">Support</a>
+        <a href="/impressum/">Impressum</a>
       </nav>
     </header>
 
     <section class="hero">
-      <h1>Our Apps</h1>
-      <p class="sub">
-        Handmade. With Passion <3
-      </p>
+      <div class="heroGrid">
+        <div>
+          <p class="eyebrow">Independent App Studio</p>
+          <h1>Ruhige Apps fuer echte Momente.</h1>
+          <p class="sub">
+            Cosmoscraft Studios entwickelt fokussierte, offline-first Tools,
+            die deine Erinnerungen nicht mit Trends ueberdecken.
+          </p>
+          <div class="heroActions">
+            <a class="btn primary" href="#apps">Apps entdecken</a>
+            <a class="btn ghost" href="/support/">Support</a>
+          </div>
+        </div>
+        <div class="card heroCard">
+          <p class="eyebrow">Prinzipien</p>
+          <ul class="featureList">
+            <li>Offline-first statt Datenwolke</li>
+            <li>Keine Tracker, keine Analyse-Skripte</li>
+            <li>Weniger Noise, mehr Fokus</li>
+          </ul>
+          <div class="heroChips">
+            <span class="tag">Privacy-first</span>
+            <span class="tag">Small &amp; careful</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <main class="section" id="privacy">
-      <div class="sectionTitle">
-        <h2>Privacy Policies</h2>
-        <div class="count"><span id="count">0</span> Items</div>
+    <main class="section" id="apps">
+      <div class="sectionHead">
+        <div>
+          <p class="eyebrow">Apps</p>
+          <h2>Aktuelle Releases</h2>
+          <p class="sub">Kurz erklaert, leicht erweiterbar, mit dezenten Links zur Datenschutzerklaerung.</p>
+        </div>
+        <div class="count"><span id="count">0</span> Apps</div>
       </div>
 
-      <div class="list" id="policyList">
-        <a class="item" href="/privacy-scrll/" aria-label="Open Scrll Privacy Policy">
-          <div class="left">
-            <p class="name">Scrll</p>
-            <p class="meta">Your gallery as a feed: Scrll through memories, not trends.</p>
+      <div class="card-grid" id="appList">
+        <article class="card appCard" data-app="true">
+          <div class="appTop">
+            <div>
+              <h3 class="appTitle">Scrll</h3>
+              <p class="appMeta">Deine Galerie als ruhiger Feed - Erinnerungen statt Trends.</p>
+            </div>
+            <span class="tag">Foto</span>
           </div>
-          <span class="cta">Open</span>
-        </a>
+          <ul class="featureList">
+            <li>Offline-first, keine Datensammlung</li>
+            <li>Momente statt Ordnerlogik</li>
+            <li>Einmaliger In-App Kauf</li>
+          </ul>
+          <div class="cardActions">
+            <a class="btn small" href="/support/">Support</a>
+            <a class="link-muted" href="/privacy-scrll/" aria-label="Scrll Datenschutzerklaerung oeffnen">Datenschutz</a>
+          </div>
+        </article>
 
-        <!-- Add more policies by duplicating the block above -->
+        <article class="card appCard placeholder">
+          <div class="appTop">
+            <div>
+              <h3 class="appTitle">Mehr demnaechst</h3>
+              <p class="appMeta">Wir veroeffentlichen nur, was wir selbst gerne nutzen.</p>
+            </div>
+            <span class="tag">In Arbeit</span>
+          </div>
+          <p class="muted">Neue Apps kommen, wenn sie bereit sind. Klar, klein, verlaesslich.</p>
+        </article>
+
+        <!-- Weitere Apps: Karte duplizieren und data-app="true" setzen -->
       </div>
     </main>
 
+    <section class="section" id="support">
+      <div class="card supportCard">
+        <p class="eyebrow">Support</p>
+        <h2>Fragen zu Scrll?</h2>
+        <p class="sub">Wir antworten in der Regel innerhalb von 48 Stunden.</p>
+        <div class="supportRow">
+          <a class="btn primary" href="/support/">Zur Support-Seite</a>
+          <a class="link-muted" href="mailto:support@cosmoscraftstudios.com">support@cosmoscraftstudios.com</a>
+        </div>
+      </div>
+    </section>
+
     <footer>
-      <div>© <span id="year"></span> Cosmoscraft Studios</div>
-      <div><a href="/impressum/">Impressum</a></div>
+      <div>&copy; <span id="year"></span> Cosmoscraft Studios</div>
+      <div>
+        <a href="/support/">Support</a>
+        &middot;
+        <a href="/impressum/">Impressum</a>
+      </div>
     </footer>
   </div>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
     document.getElementById("count").textContent =
-      document.querySelectorAll("#policyList > a.item").length;
+      document.querySelectorAll("#appList [data-app='true']").length;
   </script>
 </body>
 </html>
