@@ -1,0 +1,68 @@
+<!-- /support/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support - Scrll</title>
+  <meta name="description" content="Support for Scrll from Cosmoscraft Studios." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="./" />
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <style>
+    :root{ --max:920px; }
+    h1{
+      margin:28px 0 10px 0;
+      font-size:clamp(30px, 4.5vw, 54px);
+    }
+    .panel{
+      margin-top:18px;
+      border:1px solid rgba(28,27,25,.1);
+      border-radius:var(--radius);
+      padding:22px;
+      background:var(--card);
+      box-shadow:var(--shadow);
+    }
+    .panel p{margin-bottom:12px}
+    .contact{
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      margin-top:14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">Cosmoscraft Studios</div>
+      <nav class="nav" aria-label="Navigation">
+        <a href="/">Home</a>
+        <a href="/#apps">Apps</a>
+        <a href="/support/">Support</a>
+        <a href="/impressum/">Impressum</a>
+      </nav>
+    </header>
+
+    <h1>Support for Scrll</h1>
+
+    <section class="panel">
+      <p>If you have questions, feedback, or need help with Scrll,</p>
+      <p>please contact us at:</p>
+      <div class="contact">
+        <a href="mailto:support@cosmoscraftstudios.com">support@cosmoscraftstudios.com</a>
+        <p class="muted">We usually respond within 48 hours.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div>&copy; <span id="year"></span> Cosmoscraft Studios</div>
+      <div><a href="/">Home</a></div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
