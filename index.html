@@ -1,59 +1,68 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cosmoscraft Studios</title>
-    <meta name="description" content="Minimalistische Apps im brutalen Schwarz-Weiß-Stil." />
-    <link rel="stylesheet" href="/assets/css/base.css" />
-  </head>
-  <body>
-    <main class="page">
-      <header class="site-header reveal">
-        <div class="logo">Cosmoscraft Studios</div>
-        <p class="tagline">Minimalistisch, brutal, direkt.</p>
-      </header>
-
-      <section class="hero reveal delay-1">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apps — Übersicht</title>
+  <meta name="description" content="Übersicht meiner Apps mit Links zu den jeweiligen Privacy Policies." />
+  <link rel="stylesheet" href="assets/css/global.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
         <h1>Apps</h1>
-        <p>Eine reduzierte Liste. Keine Ablenkung. Nur das Wesentliche.</p>
+        <p>Minimalistische Übersicht. Titel, Kurzbeschreibung, Privacy Policy.</p>
+      </div>
+      <nav class="nav-mini" aria-label="Kurznavigation">
+        <a href="support.html">Support</a>
+        <a href="impressum.html">Impressum</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="card" aria-label="App-Liste">
+        <table class="table" role="table">
+          <thead>
+            <tr>
+              <th style="width:28%">Titel</th>
+              <th>Kurzbeschreibung</th>
+              <th style="width:18%">Privacy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Beispiele — ersetze/erweitere diese Zeilen -->
+            <tr>
+              <td class="app-title" data-label="Titel">App Uno</td>
+              <td class="desc" data-label="Kurzbeschreibung">Kurzer, klarer Satz: Wofür ist die App gedacht?</td>
+              <td data-label="Privacy"><a href="privacy/app-uno.html">Privacy Policy</a></td>
+            </tr>
+            <tr>
+              <td class="app-title" data-label="Titel">App Dos</td>
+              <td class="desc" data-label="Kurzbeschreibung">Noch ein kurzer Satz. Kein Marketing, nur Fakt.</td>
+              <td data-label="Privacy"><a href="privacy/app-dos.html">Privacy Policy</a></td>
+            </tr>
+            <tr>
+              <td class="app-title" data-label="Titel">App Tres</td>
+              <td class="desc" data-label="Kurzbeschreibung">Minimal. Präzise. Was macht sie?</td>
+              <td data-label="Privacy"><a href="privacy/app-tres.html">Privacy Policy</a></td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
-      <section class="apps reveal delay-2">
-        <div class="table-wrap">
-          <table class="app-table">
-            <thead>
-              <tr>
-                <th>Titel</th>
-                <th>Kurzbeschreibung</th>
-                <th>Privacy Policy</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="app-title">App 01</td>
-                <td>Kurze, klare Beschreibung der App in einem Satz.</td>
-                <td><a href="/privacy-scrll/#app-01">Datenschutz</a></td>
-              </tr>
-              <tr>
-                <td class="app-title">App 02</td>
-                <td>Eine zweite App. Minimaler Fokus, maximaler Nutzen.</td>
-                <td><a href="/privacy-scrll/#app-02">Datenschutz</a></td>
-              </tr>
-              <tr>
-                <td class="app-title">App 03</td>
-                <td>Ein drittes Produkt, kurz beschrieben.</td>
-                <td><a href="/privacy-scrll/#app-03">Datenschutz</a></td>
-              </tr>
-            </tbody>
-          </table>
+      <footer class="footer">
+        <div>© <span id="y"></span> <span class="badge">Black/White</span></div>
+        <div class="small-links">
+          <a href="support.html">Support</a>
+          <a href="impressum.html">Impressum</a>
         </div>
-      </section>
-
-      <footer class="meta-links reveal delay-3">
-        <a href="/impressum/">Impressum</a>
-        <a href="/support/">Support</a>
       </footer>
     </main>
-  </body>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
