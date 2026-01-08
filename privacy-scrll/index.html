@@ -1,284 +1,42 @@
-<!-- /privacy-scrll/index.html -->
-<!DOCTYPE html>
-<html lang="en" data-lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy – Scrll</title>
-  <meta name="description" content="Scrll Privacy Policy. Offline-first. No tracking. No data collection." />
-  <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="./" />
-  <link rel="stylesheet" href="/assets/css/base.css" />
-  <style>
-    :root{ --max:920px; } /* page width */
-    /* page-only */
-    h1{
-      margin:28px 0 10px 0;
-      font-size:clamp(30px, 4.5vw, 54px);
-    }
-    .sub{max-width:78ch}
-    .lang{
-      display:inline-flex;
-      border:1px solid var(--line);
-      padding:2px;
-      gap:2px;
-    }
-    .lang button{
-      appearance:none;
-      border:0;
-      background:transparent;
-      color:var(--muted);
-      font-size:12px;
-      text-transform:uppercase;
-      letter-spacing:.16em;
-      padding:7px 10px;
-      cursor:pointer;
-    }
-    .lang button[aria-pressed="true"]{
-      color:var(--fg);
-      border:1px solid rgba(242,242,242,.35);
-      margin:-1px;
-    }
-    .lang button:focus-visible{
-      outline:2px solid rgba(242,242,242,.6);
-      outline-offset:2px;
-    }
-    .metaRow{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-      align-items:baseline;
-      padding:14px 0;
-      border-top:1px solid var(--line);
-      border-bottom:1px solid var(--line);
-      margin:18px 0 0;
-    }
-    .tag{
-      font-size:12px;
-      text-transform:uppercase;
-      letter-spacing:.18em;
-      color:var(--muted);
-    }
-    .value{
-      font-size:12px;
-      text-transform:uppercase;
-      letter-spacing:.16em;
-      color:var(--fg);
-    }
-    .section{
-      padding:18px 0;
-      border-bottom:1px solid var(--line);
-    }
-    @media (max-width:520px){
-      .lang{width:100%;justify-content:space-between}
-      .lang button{flex:1}
-    }
-  </style>
-</head>
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy</title>
+    <meta name="description" content="Datenschutzerklärung für die Apps von Cosmoscraft Studios." />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="site-header reveal">
+        <a class="back-link" href="/">Zurück zur Übersicht</a>
+        <div class="logo">Privacy Policy</div>
+        <p class="tagline">Kurz. Klar. Schwarz auf Weiß.</p>
+      </header>
 
-<body>
-  <div class="wrap">
-    <header class="top">
-      <div class="brand">Cosmoscraft Studios</div>
-      <nav class="nav" aria-label="Navigation">
-        <a href="/">Home</a>
-        <a href="/#apps">Apps</a>
-        <a href="/support/">Support</a>
-        <a href="/impressum/">Impressum</a>
-        <span class="lang" aria-label="Language switcher">
-          <button id="btn-en" type="button" aria-pressed="true">EN</button>
-          <button id="btn-de" type="button" aria-pressed="false">DE</button>
-        </span>
-      </nav>
-    </header>
+      <section class="panel reveal delay-1">
+        <h1>Datenschutz</h1>
+        <p>
+          Diese Apps sind auf Minimalismus ausgelegt. Wenn keine Daten benötigt
+          werden, werden keine Daten erhoben.
+        </p>
+      </section>
 
-    <h1>
-      <span data-lang="en">Privacy Policy — Scrll</span>
-      <span data-lang="de">Datenschutzerklärung — Scrll</span>
-    </h1>
+      <section id="app-01" class="section reveal delay-2">
+        <h2>App 01</h2>
+        <p>Keine personenbezogenen Daten. Keine Tracker. Keine Weitergabe.</p>
+      </section>
 
-    <p class="sub" data-lang="en">
-      Scrll is offline-first. The app does not collect, store, or share personal data.
-    </p>
-    <p class="sub" data-lang="de">
-      Scrll ist offline-first. Die App erhebt, speichert oder teilt keine personenbezogenen Daten.
-    </p>
+      <section id="app-02" class="section reveal delay-2">
+        <h2>App 02</h2>
+        <p>Lokale Verarbeitung ohne Account. Es werden keine Profile erstellt.</p>
+      </section>
 
-    <div class="metaRow" aria-label="Policy metadata">
-      <span class="tag" data-lang="en">Last updated</span>
-      <span class="tag" data-lang="de">Stand</span>
-      <span class="value">03.Jan.2026</span>
-    </div>
-
-    <section class="section">
-      <h2><span data-lang="en">1. General Information</span><span data-lang="de">1. Allgemeine Informationen</span></h2>
-      <p data-lang="en">
-        Scrll is designed to respect user privacy. The app operates entirely offline and does not collect, store, or share any personal data.
-      </p>
-      <p data-lang="de">
-        Scrll wurde entwickelt, um die Privatsphäre der Nutzer zu respektieren. Die App funktioniert vollständig offline und erhebt, speichert oder teilt keine personenbezogenen Daten.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2><span data-lang="en">2. Data Collection</span><span data-lang="de">2. Datenerhebung</span></h2>
-      <p data-lang="en">Scrll does not collect or process any personal or sensitive user data.</p>
-      <p data-lang="de">Scrll erhebt oder verarbeitet keine personenbezogenen oder sensiblen Nutzerdaten.</p>
-
-      <ul data-lang="en">
-        <li>No user accounts or login</li>
-        <li>No analytics or tracking technologies</li>
-        <li>No advertising services</li>
-        <li>No backend servers</li>
-        <li>No third-party data collection</li>
-      </ul>
-
-      <ul data-lang="de">
-        <li>Keine Nutzerkonten oder Logins</li>
-        <li>Keine Analyse- oder Tracking-Technologien</li>
-        <li>Keine Werbedienste</li>
-        <li>Keine Backend-Server</li>
-        <li>Keine Datenerhebung durch Dritte</li>
-      </ul>
-
-      <p data-lang="en" class="muted">All content remains exclusively on the user’s device.</p>
-      <p data-lang="de" class="muted">Alle Inhalte verbleiben ausschließlich auf dem Gerät des Nutzers.</p>
-    </section>
-
-    <section class="section">
-      <h2><span data-lang="en">3. Photos and Media Access</span><span data-lang="de">3. Zugriff auf Fotos und Medien</span></h2>
-      <p data-lang="en">
-        Scrll accesses photos and videos stored on the user’s device solely to display and organize personal memories.
-      </p>
-      <p data-lang="de">
-        Scrll greift auf Fotos und Videos auf dem Gerät des Nutzers ausschließlich zu, um persönliche Erinnerungen anzuzeigen und zu organisieren.
-      </p>
-
-      <ul data-lang="en">
-        <li>Media files are processed locally on the device</li>
-        <li>No photos or videos are uploaded, shared, or transmitted</li>
-        <li>Original files are not modified</li>
-      </ul>
-
-      <ul data-lang="de">
-        <li>Medien werden lokal auf dem Gerät verarbeitet</li>
-        <li>Keine Fotos oder Videos werden hochgeladen, geteilt oder übertragen</li>
-        <li>Originaldateien werden nicht verändert</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2><span data-lang="en">4. Location Information</span><span data-lang="de">4. Standortinformationen</span></h2>
-      <p data-lang="en">
-        If photos contain embedded location metadata (EXIF data), Scrll may display the corresponding city name locally on the device.
-      </p>
-      <p data-lang="de">
-        Wenn Fotos eingebettete Standortmetadaten (EXIF-Daten) enthalten, kann Scrll den zugehörigen Städtenamen lokal auf dem Gerät anzeigen.
-      </p>
-
-      <ul data-lang="en">
-        <li>No active location tracking</li>
-        <li>No location permission requested</li>
-        <li>No storage or transmission of location data</li>
-      </ul>
-
-      <ul data-lang="de">
-        <li>Kein aktives Standort-Tracking</li>
-        <li>Keine Standortberechtigung erforderlich</li>
-        <li>Keine Speicherung oder Übertragung von Standortdaten</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2><span data-lang="en">5. In-App Purchases</span><span data-lang="de">5. In-App-Käufe</span></h2>
-      <p data-lang="en">Scrll offers a one-time in-app purchase to unlock full functionality.</p>
-      <p data-lang="de">Scrll bietet einen einmaligen In-App-Kauf an, um den vollen Funktionsumfang freizuschalten.</p>
-
-      <ul data-lang="en">
-        <li>Payments are processed exclusively by the app store provider</li>
-        <li>Scrll does not receive, access, or store any payment or billing information</li>
-      </ul>
-
-      <ul data-lang="de">
-        <li>Zahlungen werden ausschließlich über den App-Store-Anbieter abgewickelt</li>
-        <li>Scrll erhält keinen Zugriff auf Zahlungs- oder Abrechnungsinformationen und speichert diese nicht</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2><span data-lang="en">6. Data Sharing</span><span data-lang="de">6. Datenweitergabe</span></h2>
-      <p data-lang="en">Scrll does not share any data with third parties.</p>
-      <p data-lang="de">Scrll gibt keine Daten an Dritte weiter.</p>
-    </section>
-
-    <section class="section">
-      <h2><span data-lang="en">7. Children’s Privacy</span><span data-lang="de">7. Datenschutz von Kindern</span></h2>
-      <p data-lang="en">
-        Scrll is not designed for children under the age of 13 and does not knowingly collect personal data from children.
-      </p>
-      <p data-lang="de">
-        Scrll ist nicht für Kinder unter 13 Jahren konzipiert und erhebt wissentlich keine personenbezogenen Daten von Kindern.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2><span data-lang="en">8. Changes to This Policy</span><span data-lang="de">8. Änderungen dieser Erklärung</span></h2>
-      <p data-lang="en">
-        This Privacy Policy may be updated if the app’s functionality changes. The latest version will always be available at the same location.
-      </p>
-      <p data-lang="de">
-        Diese Datenschutzerklärung kann aktualisiert werden, wenn sich die Funktionalität der App ändert. Die aktuelle Version ist stets unter derselben Adresse verfügbar.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2><span data-lang="en">9. Contact</span><span data-lang="de">9. Kontakt</span></h2>
-      <p data-lang="en">If you have any questions about this Privacy Policy, please contact:</p>
-      <p data-lang="de">Wenn du Fragen zu dieser Datenschutzerklärung hast, kontaktiere bitte:</p>
-      <p>
-        <span data-lang="en">Email:</span>
-        <span data-lang="de">E-Mail:</span>
-        <a href="mailto:support@cosmoscraftstudios.com">support@cosmoscraftstudios.com</a>
-      </p>
-    </section>
-
-    <footer>
-      <div>© <span id="year"></span> Cosmoscraft Studios</div>
-      <div><a href="/">Home</a></div>
-    </footer>
-  </div>
-
-  <script>
-    const STORAGE_KEY = "scrll_lang";
-    const html = document.documentElement;
-
-    function setLang(lang){
-      const enPressed = (lang === "en");
-      document.getElementById("btn-en").setAttribute("aria-pressed", String(enPressed));
-      document.getElementById("btn-de").setAttribute("aria-pressed", String(!enPressed));
-      html.setAttribute("data-lang", lang);
-      html.setAttribute("lang", lang);
-      localStorage.setItem(STORAGE_KEY, lang);
-      if (location.hash !== "#" + lang) history.replaceState(null, "", "#" + lang);
-    }
-
-    function pickInitialLang(){
-      const hash = (location.hash || "").replace("#","").toLowerCase();
-      if (hash === "de" || hash === "en") return hash;
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved === "de" || saved === "en") return saved;
-      return "en";
-    }
-
-    document.getElementById("btn-en").addEventListener("click", () => setLang("en"));
-    document.getElementById("btn-de").addEventListener("click", () => setLang("de"));
-    window.addEventListener("hashchange", () => {
-      const hash = (location.hash || "").replace("#","").toLowerCase();
-      if (hash === "de" || hash === "en") setLang(hash);
-    });
-
-    setLang(pickInitialLang());
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
+      <section id="app-03" class="section reveal delay-3">
+        <h2>App 03</h2>
+        <p>Keine Analyse-Tools. Keine Werbung. Keine versteckten SDKs.</p>
+      </section>
+    </main>
+  </body>
 </html>
