@@ -1,0 +1,223 @@
+/* global.css — black/white brutalist, minimal, bold */
+
+:root{
+  --bg:#0b0b0b;
+  --fg:#f4f4f4;
+  --muted:#bdbdbd;
+  --line:#f4f4f4;
+  --soft:#1a1a1a;
+  --max:1040px;
+  --pad:22px;
+  --radius:0px; /* brutalist: keep it sharp */
+}
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--fg);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  line-height:1.35;
+  letter-spacing:0.2px;
+}
+
+a{
+  color:var(--fg);
+  text-decoration:underline;
+  text-decoration-thickness:2px;
+  text-underline-offset:3px;
+}
+a:hover{ background:var(--fg); color:var(--bg); }
+a:focus-visible{
+  outline:3px solid var(--fg);
+  outline-offset:3px;
+}
+
+.container{
+  max-width:var(--max);
+  margin:0 auto;
+  padding: clamp(18px, 4vw, 44px);
+}
+
+.header{
+  border-bottom:2px solid var(--line);
+  padding-bottom:18px;
+  margin-bottom:22px;
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:18px;
+}
+
+.brand{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+.brand h1{
+  margin:0;
+  font-size: clamp(28px, 5vw, 56px);
+  font-weight:900;
+  letter-spacing:-0.8px;
+  text-transform:uppercase;
+}
+.brand p{
+  margin:0;
+  color:var(--muted);
+  max-width:60ch;
+}
+
+.nav-mini{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:flex-end;
+  text-align:right;
+}
+.nav-mini a{
+  font-size:14px;
+  color:var(--muted);
+  text-decoration-thickness:1px;
+}
+.nav-mini a:hover{ color:var(--bg); }
+
+.card{
+  border:2px solid var(--line);
+  background:transparent;
+}
+
+.section-title{
+  margin:0 0 10px 0;
+  font-size:18px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:0.6px;
+}
+
+.table{
+  width:100%;
+  border-collapse:collapse;
+  border-top:2px solid var(--line);
+}
+.table thead th{
+  text-align:left;
+  font-size:12px;
+  letter-spacing:0.8px;
+  text-transform:uppercase;
+  color:var(--muted);
+  padding:14px var(--pad);
+  border-bottom:2px solid var(--line);
+}
+.table tbody td{
+  padding:16px var(--pad);
+  border-bottom:1px solid var(--line);
+  vertical-align:top;
+}
+.table tbody tr:hover{
+  background:var(--soft);
+}
+.table .app-title{
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:0.4px;
+}
+.table .desc{
+  color:var(--muted);
+  max-width:70ch;
+}
+
+.badge{
+  display:inline-block;
+  border:1px solid var(--line);
+  padding:2px 8px;
+  font-size:12px;
+  letter-spacing:0.6px;
+  text-transform:uppercase;
+}
+
+.footer{
+  margin-top:28px;
+  padding-top:18px;
+  border-top:2px solid var(--line);
+  display:flex;
+  justify-content:space-between;
+  gap:14px;
+  flex-wrap:wrap;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.small-links{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.page{
+  display:grid;
+  gap:18px;
+}
+
+.block{
+  border:2px solid var(--line);
+  padding: var(--pad);
+}
+
+.block h2{
+  margin:0 0 10px 0;
+  font-size:22px;
+  font-weight:900;
+  text-transform:uppercase;
+}
+.block p, .block li{
+  color:var(--muted);
+  max-width:80ch;
+}
+.block ul{
+  margin:10px 0 0 18px;
+}
+.meta{
+  font-size:12px;
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:0.8px;
+}
+
+.hr{
+  height:2px;
+  background:var(--line);
+  margin:18px 0;
+}
+
+.kbd{
+  border:1px solid var(--line);
+  padding:2px 6px;
+  font-size:12px;
+  letter-spacing:0.3px;
+}
+
+/* Responsive table: stack rows on small screens */
+@media (max-width:720px){
+  .header{ align-items:flex-start; flex-direction:column; }
+  .nav-mini{ justify-content:flex-start; text-align:left; }
+  .table thead{ display:none; }
+  .table, .table tbody, .table tr, .table td{ display:block; width:100%; }
+  .table tbody td{
+    border-bottom:0;
+    padding:12px var(--pad);
+  }
+  .table tbody tr{
+    border-bottom:2px solid var(--line);
+  }
+  .table tbody td[data-label]::before{
+    content: attr(data-label);
+    display:block;
+    font-size:12px;
+    color:var(--muted);
+    letter-spacing:0.8px;
+    text-transform:uppercase;
+    margin-bottom:6px;
+  }
+}
