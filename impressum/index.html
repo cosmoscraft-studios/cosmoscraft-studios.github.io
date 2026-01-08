@@ -1,107 +1,41 @@
-<!-- /impressum/index.html -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Impressum – Cosmoscraft Studios</title>
-  <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="./" />
-  <link rel="stylesheet" href="/assets/css/base.css" />
-  <style>
-    :root{ --max:920px; } /* page width */
-    h1{
-      margin:28px 0 10px 0;
-      font-size:clamp(30px, 4.5vw, 54px);
-    }
-    .card{
-      margin-top:18px;
-      border-top:1px solid var(--line);
-      padding-top:18px;
-    }
-    .kv{
-      display:grid;
-      grid-template-columns:1fr;
-      gap:10px;
-      margin-top:6px;
-    }
-    .kv div{
-      border-bottom:1px solid var(--line);
-      padding:12px 0;
-    }
-    .k{
-      font-size:12px;
-      text-transform:uppercase;
-      letter-spacing:.16em;
-      color:var(--muted);
-      margin:0 0 6px 0;
-    }
-    .v{margin:0;font-size:14px;line-height:1.6}
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <header class="top">
-      <div class="brand">Cosmoscraft Studios</div>
-      <nav class="nav" aria-label="Navigation">
-        <a href="/">Home</a>
-        <a href="/#apps">Apps</a>
-        <a href="/support/">Support</a>
-      </nav>
-    </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Impressum</title>
+    <meta name="description" content="Impressum von Cosmoscraft Studios." />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="site-header reveal">
+        <a class="back-link" href="/">Zurück zur Übersicht</a>
+        <div class="logo">Impressum</div>
+        <p class="tagline">Pflichtangaben, klar gesetzt.</p>
+      </header>
 
-    <h1>Impressum</h1>
+      <section class="panel reveal delay-1">
+        <h1>Angaben gemäß § 5 TMG</h1>
+        <p>Hier stehen die rechtlich erforderlichen Angaben.</p>
+      </section>
 
-    <section class="card" aria-label="Impressum Angaben">
-      <h2>Angaben gemäß § 5 TMG</h2>
-      <div class="kv">
-        <div>
-          <p class="k">Name / Firma</p>
-          <p class="v">Cedric Biamont</p>
-        </div>
-        <div>
-          <p class="k">Anschrift</p>
-          <p class="v">Beilstr. 2, 68159 Mannheim, Deutschland</p>
-        </div>
-        <div>
-          <p class="k">Kontakt</p>
-          <p class="v">
-            E-Mail: <a href="mailto:support@cosmoscraftstudios.com">support@cosmoscraftstudios.com</a>
-            
-          </p>
-        </div>
-      </div>
+      <section class="section reveal delay-2">
+        <h2>Betreiber</h2>
+        <p>
+          Cosmoscraft Studios<br />
+          Musterstraße 1<br />
+          12345 Stadt
+        </p>
+      </section>
 
-      <h2>Inhaltlich Verantwortlicher</h2>
-      <p>Cedric Biamont – Anschrift wie oben</p>
-
-      <h2>Haftung für Inhalte</h2>
-      <p>
-        Wir bemühen uns um Aktualität und Richtigkeit der Inhalte, übernehmen jedoch keine Gewähr.
-        Verpflichtungen zur Entfernung oder Sperrung von Informationen nach den allgemeinen Gesetzen bleiben unberührt.
-      </p>
-
-      <h2>Haftung für Links</h2>
-      <p>
-        Unser Angebot enthält Links zu externen Websites Dritter. Auf deren Inhalte haben wir keinen Einfluss.
-        Daher können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
-      </p>
-
-      <h2>Urheberrecht</h2>
-      <p>
-        Die durch uns erstellten Inhalte und Werke auf diesen Seiten unterliegen dem Urheberrecht.
-        Beiträge Dritter sind als solche gekennzeichnet.
-      </p>
-    </section>
-
-    <footer>
-      <div>© <span id="year"></span> Cosmoscraft Studios</div>
-      <div><a href="/">Home</a></div>
-    </footer>
-  </div>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
+      <section class="section reveal delay-3">
+        <h2>Kontakt</h2>
+        <p>
+          E-Mail: <a href="mailto:hello@cosmoscraft.studio">hello@cosmoscraft.studio</a><br />
+          Telefon: +49 000 0000000
+        </p>
+      </section>
+    </main>
+  </body>
 </html>
