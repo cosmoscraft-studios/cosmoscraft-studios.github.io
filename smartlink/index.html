@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Root herunterladen</title>
+
+  <script>
+    function redirectToStore() {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      const appStoreUrl = "https://apps.apple.com/de/app/root-galabau-rechner/id6772712140";
+      const playStoreUrl = "https://play.google.com/store/apps/details?id=com.cosmoscraftstudios.root&pcampaignid=web_share";
+      const fallbackUrl = "https://chartreuse-drill-025.notion.site/Root-GaLaBau-Rechner-3bec112a0cfe806bbb28f8c26fb16a94?source=copy_link";
+
+      if (/android/i.test(userAgent)) {
+        window.location.replace(playStoreUrl);
+        return;
+      }
+
+      if (/iPad|iPhone|iPod/.test(userAgent)) {
+        window.location.replace(appStoreUrl);
+        return;
+      }
+
+      window.location.replace(fallbackUrl);
+    }
+
+    redirectToStore();
+  </script>
+</head>
+
+<body>
+  <p>Du wirst zum passenden App Store weitergeleitet …</p>
+</body>
+</html>
